@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NavegacionFragmentosApp</string>
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_galeria">Galería</string>
+    <string name="menu_lista">Lista</string>
+
+    <string name="texto_fragmento_hola">
+        ¡Bienvenido al Fragmento de Texto!
+        \n\nEste es un ejemplo de contenido estático
+        usando Navigation Component.
+    </string>
+
+    <string name="descripcion_imagen_grande">Una imagen de galería</string>
+
+    <string name="titulo_elemento_lista">Elemento %d</string>
+    <string name="subtitulo_elemento_lista">Este es el subtítulo del elemento %d</string>
+    <string name="descripcion_imagen_item">Icono del elemento</string>
+</resources>
