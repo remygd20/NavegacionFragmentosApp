@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">NavegacionFragmentosApp</string>
+    <string name="app_name">LamboApp</string>
 
     <string name="menu_inicio">Inicio</string>
-    <string name="menu_galeria">Galería</string>
-    <string name="menu_lista">Lista</string>
+    <string name="menu_galeria">Destacado</string>
+    <string name="menu_lista">Modelos</string>
 
     <string name="texto_fragmento_hola">
-        ¡Bienvenido al Fragmento de Texto!
-        \n\nEste es un ejemplo de contenido estático
-        usando Navigation Component.
+        Bienvenido a la App de Lamborghini
+        \n\nNavega usando el menú inferior para
+        descubrir los modelos en nuestro catálogo.
     </string>
 
-    <string name="descripcion_imagen_grande">Una imagen de galería</string>
+    <string name="descripcion_imagen_grande">Lamborghini modelo destacado</string>
 
-    <string name="titulo_elemento_lista">Elemento %d</string>
-    <string name="subtitulo_elemento_lista">Este es el subtítulo del elemento %d</string>
-    <string name="descripcion_imagen_item">Icono del elemento</string>
+    <string name="titulo_elemento_lista">Modelo: %s</string>
+    <string name="subtitulo_elemento_lista">Tipo: %s</string>
+    <string name="descripcion_imagen_item">Icono del modelo</string>
 </resources>

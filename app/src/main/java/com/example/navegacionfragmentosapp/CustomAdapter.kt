@@ -6,21 +6,22 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class CustomAdapter(private val items: List<MiDataModel>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
-    // El ViewHolder que contiene las vistas (usando findViewById)
+    // El ViewHolder que contiene las vistas
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imagenItem: ImageView
         val textoTitulo: TextView
-        val textoSubtitulo: TextView
+        val textoSpecs: TextView
 
         init {
             // Encontrar las vistas usando findViewById
             imagenItem = view.findViewById(R.id.imagenItem)
             textoTitulo = view.findViewById(R.id.textoTituloItem)
-            textoSubtitulo = view.findViewById(R.id.textoSubtituloItem)
+            textoSpecs = view.findViewById(R.id.textoSubtituloItem)
         }
     }
 
@@ -39,8 +40,15 @@ class CustomAdapter(private val items: List<MiDataModel>) :
     // Rellena los datos de un ítem
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
+
+        // Ponemos los textos
         holder.textoTitulo.text = item.titulo
-        holder.textoSubtitulo.text = item.subtitulo
-        holder.imagenItem.setImageResource(item.imageUrl)
+        holder.textoSpecs.text = item.specs
+
+        Glide.with(holder.itemView.context)
+            .load(item.imageUrl) // Carga la URL del item
+            .placeholder(R.drawable.lambo_logo)
+            .error(R.drawable.placeholder_image) // Imagen si falla (usa tu foto del carro)
+            .into(holder.imagenItem)
     }
 }

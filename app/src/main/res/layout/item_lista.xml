@@ -9,10 +9,11 @@
 
     <ImageView
         android:id="@+id/imagenItem"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
         android:contentDescription="@string/descripcion_imagen_item"
-        android:src="@android:drawable/ic_menu_view" />
+        android:scaleType="centerCrop"
+        tools:src="@drawable/placeholder_image" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -25,16 +26,16 @@
             android:id="@+id/textoTituloItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Título del Elemento" />
+            tools:text="Modelo (ej. Revuelto)" />
 
         <TextView
             android:id="@+id/textoSubtituloItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            tools:text="Subtítulo del elemento" />
+            android:textSize="15sp"
+            tools:text="Specs (ej. V12 - 1015 CV)" />
 
     </LinearLayout>
 </LinearLayout>
